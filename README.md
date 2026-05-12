@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 🚀 LeadFlow CRM - Full Stack Lead Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance Lead Management System (Mini CRM) designed to streamline customer acquisition and data tracking. This project demonstrates a production-ready approach to handling business leads with a focus on Data Integrity, Intuitive UI/UX, and System Scalability.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Key Features
 
-### `npm start`
+* **Real-Time Dashboard**: Instant insights into total leads, new prospects, and conversion metrics.
+* **Full CRUD Operations**: Efficiently Add, View, Update, and Delete lead records via a custom Node.js API.
+* **Smart Validation**:
+    * Strict **10-digit phone number** enforcement.
+    * **Duplicate Prevention**: Backend logic ensures no two leads share the same phone number.
+* **Advanced Filtering (Bonus)**: Search by Name and filter by Status (New, Interested, Converted, Not Interested).
+* **Premium UI**: A custom "Midnight Glass" dark mode interface featuring **Glassmorphism** and smooth React transitions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React.js (Hooks, Axios, Responsive CSS) |
+| **Backend** | Node.js & Express.js |
+| **Database** | PostgreSQL |
+| **Design** | Custom Glassmorphism UI |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Prerequisites
+* **Node.js** (v14+)
+* **PostgreSQL**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Clone the Repository
+```bash
+git clone [https://github.com/keerthi-bhemesetty-0406/leadflow-crm.git](https://github.com/keerthi-bhemesetty-0406/leadflow-crm.git)
+cd leadflow-crm
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Backend Setup
+1.  Navigate to the `server` folder:
+    ```bash
+    cd server
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Create a `.env` file with your database credentials:
+    ```env
+    DB_USER=your_user
+    DB_PASSWORD=your_password
+    DB_HOST=localhost
+    DB_PORT=5432
+    DB_NAME=lead_management
+    ```
+4.  Start the server:
+    ```bash
+    npm start
+    ```
+    *(or `nodemon index.js` for development)*
 
-### `npm run eject`
+### 4. Frontend Setup
+1.  Navigate to the `client` folder:
+    ```bash
+    cd client
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Start the application:
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧠 Problem-Solving Approach
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Security**: Implemented backend-level validation to prevent invalid data entry regardless of frontend state.
+* **User Experience**: Used "Loading" states and smooth scroll offsets to ensure a seamless navigation flow between dashboard and management views.
+* **Performance**: Leveraged PostgreSQL indexing for fast lead retrieval and efficient status updates.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
