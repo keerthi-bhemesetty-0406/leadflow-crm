@@ -75,7 +75,7 @@ cd leadflow-crm
     ```bash
     npm start
     ```
-
+    
 ---
 
 ## 🧠 Problem-Solving Approach
@@ -86,3 +86,10 @@ cd leadflow-crm
 
 ---
 
+<img width="1366" height="768" alt="Screenshot from 2026-05-12 17-14-19" src="https://github.com/user-attachments/assets/babf9b25-d6b4-4f18-a08a-9e056b35b7f1" /> 
+
+<img width="1366" height="768" alt="Screenshot from 2026-05-12 17-14-46" src="https://github.com/user-attachments/assets/a8cba7a3-ac66-455b-974d-89716445312b" />
+
+<img width="1366" height="768" alt="Screenshot from 2026-05-12 17-15-02" src="https://github.com/user-attachments/assets/130b48f3-743c-492a-a35b-10fc5e3ba59b" />
+
+<img width="1366" height="768" alt="Screenshot from 2026-05-12 17-15-12" src="https://github.com/user-attachments/assets/895523ad-154d-44ae-8edc-067bb933d079" />
