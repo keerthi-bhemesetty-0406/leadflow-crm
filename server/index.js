@@ -16,18 +16,18 @@ app.post('/api/leads', async (req, res) => {
 
   // 1. Structural Validation (Requirement: Form validation)
   if (!name || !phone || !source) {
-    return res.status(400).json({ error: "Name, Phone, and Source are mandatory." }); [cite: 33]
+    return res.status(400).json({ error: "Name, Phone, and Source are mandatory." }); 
   }
 
   // 2. Data Integrity (Requirement: Problem-solving approach)
   const cleanPhone = phone.replace(/\D/g, "");
   if (cleanPhone.length !== 10) {
-    return res.status(400).json({ error: "A valid 10-digit phone number is required." }); [cite: 33]
+    return res.status(400).json({ error: "A valid 10-digit phone number is required." }); 
   }
 
   try {
     // 3. Database Check (Requirement: Database design)
-    const existing = await pool.query("SELECT id FROM leads WHERE phone = $1", [cleanPhone]); [cite: 25]
+    const existing = await pool.query("SELECT id FROM leads WHERE phone = $1", [cleanPhone]); 
     if (existing.rows.length > 0) {
       return res.status(409).json({ error: "This lead already exists." });
     }
@@ -40,7 +40,7 @@ app.post('/api/leads', async (req, res) => {
     res.status(201).json(result.rows[0]);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Internal Server Error" }); [cite: 34]
+    res.status(500).json({ error: "Internal Server Error" }); 
   }
 });
 
